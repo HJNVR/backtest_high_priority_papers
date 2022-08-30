@@ -46,6 +46,9 @@ The whole project is called empirical asset pricing with machine leaning, which 
 - check `status.csv`
     - search `S3` in AWS website and find `mas-backtest` bucket
 - AWS EC2 
+   - activae instance 
+   - find `id_rsa`
+   - connect to instance
 
 # two options: 
 1) cloud (AWS)
