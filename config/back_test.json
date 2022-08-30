@@ -1,0 +1,17 @@
+{   "ml_config": "Below are config settings for ML model",  
+    "kfold": 5,
+    "train_period": [10, 15],
+    "test_period": [1], 
+    "topk": [10],
+    "money": 100000, 
+    "first_train_end_ym": "201001", 
+    "end_date": "201012",
+    "tune_sampler": "tpe",
+    "train_valid_period": [16, 17],
+    "tune_trials": 1,
+    "md": "lr",
+    "comment_fs" : "lgb, [boruta, empty, rfecv]",
+    "fs": ["rfecv", ""],
+    "y_col_prefix": "fut_ret",
+    "primary_key": ["ticker", "permno", "date"]
+}
