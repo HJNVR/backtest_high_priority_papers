@@ -44,9 +44,8 @@ else:
     raise ValueError('invalid sampler value')
 
 # read from AWS s3 
-
-def read_file(filename):
-    s3 = boto3.resource('s3', aws_access_key_id= 'AKIAVNMK4EBGKXH5KHRT', aws_secret_access_key='KZXHnAhU5Sd0sR5FgCd8YSYzBv5HH2Uz4bkfz+x5')
+def read_file(filename, key_id, access_key):
+    s3 = boto3.resource('s3', aws_access_key_id= key_id, aws_secret_access_key=access_key)
     obj = s3.Object('backtest-11-papers', filename)
     data=obj.get()['Body'].read()
     df = pd.read_csv(io.BytesIO(data), header=0, delimiter=",", low_memory=False, index_col = 0)
