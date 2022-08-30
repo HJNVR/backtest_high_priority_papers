@@ -1,0 +1,14 @@
+boruta==0.3
+boto3==1.24.48
+keras==2.9.0
+lightgbm==3.3.2
+matplotlib==3.5.2
+numpy==1.22.4
+optuna==2.10.0
+pandas==1.4.2
+python_dateutil==2.8.2
+scikit_learn==1.1.2
+seaborn==0.11.2
+tensorflow==2.9.1
+tqdm==4.64.0
+yahoo_fin==0.8.9.1
