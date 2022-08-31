@@ -47,7 +47,7 @@ The whole project is called empirical asset pricing with machine leaning, which 
     - search `S3` in AWS website and find `mas-backtest` bucket
 - AWS EC2 (AWS Linux instance t2)
    - activae instance 
-   - find `id_rsa`
+   - find `id_rsa` , `chmod 400 ` + `id_rsa`
    - connect to instance
       - perform a quick update on the instance `sudo yum update -y`
       - install git in the instance `sudo yum install git -y`
@@ -56,8 +56,7 @@ The whole project is called empirical asset pricing with machine leaning, which 
 - Install Anaconda3 (https://medium.com/@GalarnykMichael/aws-ec2-part-3-installing-anaconda-on-ec2-linux-ubuntu-dbef0835818a)
    - `wget https://repo.anaconda.com/archive/Anaconda3-5.3.1-Linux-x86_64.sh`, select latest version
    - `bash ` + the anaconda file downloaded (enter yes, enter to accept terms and finish installation)
-   - `vi .bashrc` , then copy `export PATH=/home/ec2-user/anaconda/bin:$PATH` into bash file
-   - `source .bashrc`
+   - `source /home/ec2-user/anaconda3/etc/profile.d/conda.sh`
 
 # two options: 
 1) cloud (AWS)
